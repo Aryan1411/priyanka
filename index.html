@@ -2,607 +2,843 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Priyanka | Professional Driving Instructor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Priyanka is a professional driving instructor helping learners become confident, safe drivers with patient, structured lessons and flexible scheduling." />
-  <meta name="theme-color" content="#0ea5e9" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230ea5e9'/%3E%3Cpath d='M18 40h28l-3-8a6 6 0 0 0-5.6-3.9H26.6A6 6 0 0 0 21 32l-3 8z' fill='white'/%3E%3Ccircle cx='24' cy='44' r='4' fill='white'/%3E%3Ccircle cx='40' cy='44' r='4' fill='white'/%3E%3C/svg%3E" />
+  <title>Priyanka — Professional Cooking Instructor</title>
+  <meta name="description" content="Priyanka is a professional cooking instructor offering private lessons, group workshops, and live online classes. Learn Indian regional cuisine, baking, vegetarian, vegan, and meal prep. Book a class today." />
+  <meta name="theme-color" content="#7b3fe4" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='4'%3E%3Cpath d='M14 28h36v20a6 6 0 0 1-6 6H20a6 6 0 0 1-6-6V28z' fill='%237b3fe4'/%3E%3Cpath d='M10 24c-2-8 6-14 14-10 3-6 13-6 16 0 8-4 16 2 14 10' fill='%23b394f6'/%3E%3Cpath d='M24 42v6M32 42v6M40 42v6'/%3E%3C/g%3E%3C/svg%3E" />
   <style>
     :root{
-      --bg:#0b1020;
-      --surface:#0f152b;
-      --muted:#c8d1e6;
-      --text:#eef2ff;
-      --primary:#0ea5e9;
-      --primary-600:#0284c7;
-      --primary-700:#0369a1;
-      --accent:#22c55e;
-      --warning:#f59e0b;
-      --danger:#ef4444;
-      --card:#121938;
-      --ring: 0 0 0 3px color-mix(in oklab, var(--primary), transparent 75%);
-      --radius:14px;
-      --shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.04);
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      --step--1: clamp(.82rem, .78rem + .2vw, .95rem);
-      --step-0: clamp(1rem, .95rem + .3vw, 1.1rem);
-      --step-1: clamp(1.15rem, 1.1rem + .6vw, 1.35rem);
-      --step-2: clamp(1.35rem, 1.22rem + 1.2vw, 1.7rem);
-      --step-3: clamp(1.7rem, 1.5rem + 1.8vw, 2.2rem);
-      --step-4: clamp(2rem, 1.8rem + 2.6vw, 2.8rem);
-      --step-5: clamp(2.4rem, 2rem + 4vw, 3.5rem);
+      --bg: #0f1020;
+      --panel: #16172a;
+      --text: #e8e8f0;
+      --muted: #b9bdd2;
+      --brand: #7b3fe4;
+      --brand-2: #9a7ff5;
+      --accent: #2ed3a8;
+      --danger: #ff5d5d;
+      --ok: #35c759;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 14px;
+      --focus: 0 0 0 3px rgba(123,63,228,.45);
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0; font-family:var(--font); color:var(--text); background: radial-gradient(1200px 600px at 10% -10%, #10224a, transparent 60%), radial-gradient(900px 500px at 110% 0%, #0b1a39, transparent 60%), var(--bg);
-      line-height:1.6;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1000px 600px at 80% -200px, rgba(123,63,228,.25), transparent), var(--bg);
+      color: var(--text);
+      line-height:1.5;
     }
-    a{color:inherit}
-    img{max-width:100%; display:block}
-    .container{width:min(1200px, 92%); margin-inline:auto}
-    .btn{
-      display:inline-flex; align-items:center; gap:.6rem; padding:.9rem 1.1rem; border-radius:12px; font-weight:700; letter-spacing:.2px; text-decoration:none; border:1px solid color-mix(in oklab, var(--primary), transparent 70%);
-      background: linear-gradient(180deg, color-mix(in oklab, var(--primary), white 8%), var(--primary-700)); color:white; box-shadow: var(--shadow);
-      transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
+    a{color:var(--brand-2); text-underline-offset: 3px}
+    a.button, button.button{
+      appearance:none; border:0; cursor:pointer;
+      color:#0a0b14; background:linear-gradient(135deg,var(--accent),#38efb0);
+      padding:.9rem 1.1rem; border-radius:12px; font-weight:700; letter-spacing:.2px;
+      box-shadow: 0 6px 18px rgba(46,211,168,.35);
     }
-    .btn:hover{transform: translateY(-1px); box-shadow: 0 12px 35px rgba(14,165,233,.35), inset 0 1px 0 rgba(255,255,255,.08)}
-    .btn.secondary{background: linear-gradient(180deg, #1b2449, #141a33); border-color:#2a345f}
-    .btn.ghost{background:transparent; border-color:#2a345f}
-    .badge{
-      display:inline-flex; align-items:center; gap:.5rem; font-size:var(--step--1); padding:.35rem .6rem; border-radius:999px; border:1px solid #20305d; color:var(--muted); background:#11183a88; backdrop-filter: blur(6px);
+    .button.ghost{
+      background: #24253d; color: var(--text); box-shadow: inset 0 0 0 2px rgba(185,189,210,.2);
     }
-    /* Header */
-    .skip-link{position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden}
-    .skip-link:focus{left:1rem; top:1rem; width:auto; height:auto; padding:.6rem 1rem; background:#0b1a39; border-radius:10px; outline: none; box-shadow: var(--ring)}
-    header{
-      position:sticky; top:0; z-index:50; backdrop-filter: blur(8px);
-      background: color-mix(in oklab, var(--bg), transparent 45%); border-bottom:1px solid rgba(255,255,255,.06);
+    .wrap{max-width:1100px; margin:0 auto; padding:0 18px}
+    header.site{
+      position:sticky; top:0; z-index:50; backdrop-filter: blur(10px);
+      background: linear-gradient(180deg, rgba(15,16,32,.9), rgba(15,16,32,.6));
+      border-bottom: 1px solid rgba(255,255,255,.06);
     }
-    .nav{display:flex; align-items:center; justify-content:space-between; padding:.8rem 0}
-    .brand{display:flex; align-items:center; gap:.7rem; text-decoration:none}
-    .logo{
-      width:42px; height:42px; display:grid; place-items:center;
-      background: radial-gradient(60% 60% at 50% 40%, #19a6ff, #0d6ab3); color:white; border-radius:12px; box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 8px 20px rgba(14,165,233,.35);
+    .nav{
+      display:flex; align-items:center; justify-content:space-between; gap:16px; height:64px;
     }
-    .brand h1{font-size:1.05rem; margin:0; line-height:1.1}
-    .brand small{display:block; color:var(--muted); font-weight:500; letter-spacing:.2px}
-    .nav-links{display:flex; gap:1rem; align-items:center}
-    .nav-links a{padding:.55rem .7rem; border-radius:10px; color:var(--muted); text-decoration:none; font-weight:600}
-    .nav-links a:hover{color:var(--text); background:#1a2347}
-    .hamburger{display:none; background:none; border:0; color:var(--text); font-size:1.5rem; padding:.5rem; border-radius:10px}
-    .hamburger:focus{box-shadow: var(--ring)}
-    /* Hero */
+    .brand{display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.3px}
+    .brand .logo{
+      width:34px; height:34px; border-radius:9px; display:grid; place-items:center;
+      background: linear-gradient(135deg, var(--brand), #5b2fbb);
+      box-shadow: 0 6px 16px rgba(123,63,228,.45);
+    }
+    .brand .logo svg{width:20px; height:20px}
+    .navlinks{display:flex; gap:18px; align-items:center}
+    .navlinks a{color:var(--muted); text-decoration:none; padding:8px 10px; border-radius:8px}
+    .navlinks a:hover,.navlinks a:focus{color:var(--text); background: rgba(255,255,255,.05); outline:none}
+    .menu-btn{display:none}
+    @media (max-width:880px){
+      .menu-btn{display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:10px; background:#23243a; border:0; color:var(--text)}
+      .navlinks{position:fixed; inset:64px 0 auto 0; background:rgba(15,16,32,.98); backdrop-filter: blur(8px); padding:14px; display:none; flex-direction:column; align-items:stretch; border-bottom:1px solid rgba(255,255,255,.06)}
+      .navlinks.show{display:flex}
+      .navlinks a{padding:14px}
+    }
     .hero{
-      position:relative; overflow:hidden;
-      padding: min(7vw,4.5rem) 0 min(10vw,5.5rem);
+      padding: clamp(28px, 6vw, 60px) 0 clamp(30px, 7vw, 70px);
     }
+    .hero .inner{
+      display:grid; grid-template-columns: 1.2fr .8fr; gap:28px; align-items:center;
+    }
+    @media (max-width:880px){ .hero .inner{ grid-template-columns: 1fr } }
+    .tag{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; background:#23243a; border-radius:999px; color:var(--muted); font-size:.9rem}
+    .tag .dot{width:8px; height:8px; border-radius:50%; background:var(--ok); box-shadow:0 0 10px rgba(53,199,89,.8)}
+    h1{font-size: clamp(1.9rem, 4.2vw, 3rem); margin:14px 0 8px}
+    .lead{color:var(--muted); font-size: clamp(1rem, 2.2vw, 1.15rem)}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+    .badges{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+    .badge{font-size:.88rem; color:#dcdff4; background:linear-gradient(180deg,#2a2b46,#20223a); border:1px solid rgba(255,255,255,.08); padding:6px 10px; border-radius:10px}
+    .panel{
+      background: linear-gradient(180deg, var(--panel), #14152a);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .illus{
+      aspect-ratio: 4/3; border-radius: var(--radius); overflow:hidden; position:relative; isolation:isolate;
+      background:
+        radial-gradient(120px 80px at 20% 20%, rgba(154,127,245,.3), transparent),
+        radial-gradient(200px 120px at 80% 0%, rgba(46,211,168,.25), transparent),
+        linear-gradient(135deg, #1b1c36, #15162c);
+      display:grid; place-items:center;
+    }
+    .illus svg{width:80%; max-width:380px; opacity:.9}
+    section{padding:36px 0}
+    section .section-head{display:flex; align-items:end; justify-content:space-between; gap:16px; margin-bottom:16px}
+    h2{font-size: clamp(1.4rem, 2.8vw, 2rem); margin:0}
     .grid{
-      display:grid; gap:1.4rem; grid-template-columns: 1.1fr .9fr; align-items:center;
+      display:grid; gap:14px;
+      grid-template-columns: repeat(12, 1fr);
     }
-    .hero h2{font-size:var(--step-5); line-height:1.05; margin:.2rem 0 .6rem}
-    .lead{font-size:var(--step-1); color:var(--muted); max-width:60ch}
-    .cta-row{display:flex; gap:.8rem; margin-top:1.1rem; flex-wrap:wrap}
-    .hero-card{
-      background:linear-gradient(180deg, #121a3a, #0e1430); border:1px solid #24305b; border-radius:var(--radius); padding:1rem; box-shadow: var(--shadow)
-    }
-    .hero-stats{display:grid; grid-template-columns:repeat(3,1fr); gap:.8rem; margin-top:1rem}
-    .stat{
-      padding:.8rem; background:#0e1433; border:1px solid #263267; border-radius:12px; text-align:center
-    }
-    .stat b{display:block; font-size:var(--step-2)}
-    .stat span{color:var(--muted); font-size:var(--step--1)}
-    /* Sections */
-    section{padding: min(8vw,4.5rem) 0}
-    .section-head{display:flex; align-items:end; justify-content:space-between; gap:1rem; margin-bottom:1.2rem}
-    .section-head h3{font-size:var(--step-3); margin:0}
-    .muted{color:var(--muted)}
-    .cards{display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem}
+    .col-4{grid-column: span 4}
+    .col-6{grid-column: span 6}
+    .col-8{grid-column: span 8}
+    .col-12{grid-column: 1 / -1}
+    @media (max-width:980px){ .col-8,.col-6{grid-column: 1 / -1} .col-4{grid-column: span 6} }
+    @media (max-width:640px){ .col-4{grid-column: 1 / -1} }
     .card{
-      background:linear-gradient(180deg, #10183a, #0d142f); border:1px solid #23305f; border-radius:var(--radius); padding:1rem; box-shadow: var(--shadow)
+      padding:16px; border-radius:14px; background:#1a1b33; border:1px solid rgba(255,255,255,.06)
     }
-    .card h4{margin:.2rem 0 .6rem; font-size:var(--step-1)}
-    .icon{width:34px; height:34px; display:grid; place-items:center; border-radius:10px; background:#11214a; border:1px solid #25407a; color:#7dd3fc}
-    .list{margin:.6rem 0 0; padding-left:1rem}
-    .list li{margin:.35rem 0; color:var(--muted)}
-    /* Pricing */
-    .price{font-size:var(--step-3); font-weight:800}
-    .save{color:#86efac; font-weight:700; font-size:var(--step--1)}
-    .price-card{position:relative; overflow:hidden}
-    .price-card.reco{border-color:#2a5e9a; box-shadow: 0 12px 35px rgba(14,165,233,.25)}
-    .price-card .badge{position:absolute; top:.8rem; right:.8rem}
-    .price-feat{display:grid; gap:.4rem; margin:.7rem 0}
-    .price-feat span{display:flex; align-items:center; gap:.5rem; color:var(--muted)}
-    .tick{color:#86efac}
-    /* Testimonials */
-    .testimonial{display:flex; flex-direction:column; gap:.7rem; padding:1rem; border:1px solid #24305b; background:#0e1433; border-radius:14px}
-    .stars{color:#fde047}
-    .tgrid{display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem}
-    /* FAQ */
-    .faq{border:1px solid #24305b; background:#0e1433; border-radius:14px; padding:1rem}
-    .faq summary{cursor:pointer; font-weight:700; font-size:var(--step-0)}
-    .faq p{color:var(--muted); margin:.5rem 0 0}
-    /* Contact */
-    .contact{
-      display:grid; grid-template-columns: 1.1fr .9fr; gap:1rem; align-items:start
-    }
-    form{
-      display:grid; gap:.7rem; background:#0e1433; border:1px solid #24305b; padding:1rem; border-radius:14px
-    }
-    label{font-weight:700}
+    .card h3{margin:.2rem 0 .5rem; font-size:1.15rem}
+    .muted{color:var(--muted)}
+    ul.clean{margin:0; padding-left:1.1rem}
+    ul.clean li{margin:.25rem 0}
+    .price{font-weight:800; font-size:1.3rem}
+    .chip{display:inline-flex; gap:8px; align-items:center; background:#23243a; color:#d7dbf1; padding:4px 8px; border-radius:999px; font-size:.85rem}
+    .chip .dot{width:8px; height:8px; border-radius:50%; background:var(--brand-2)}
+    .kpi{display:flex; gap:14px; flex-wrap:wrap}
+    .kpi .item{padding:10px 12px; background:#212242; border-radius:12px; border:1px solid rgba(255,255,255,.06)}
+    .list{display:flex; flex-direction:column; gap:10px}
+    .faq details{background:#1b1c37; border:1px solid rgba(255,255,255,.06); border-radius:12px; padding:10px 12px}
+    .faq summary{cursor:pointer; font-weight:700}
+    .faq p{margin:.3rem 0 0; color:var(--muted)}
+    form label{display:block; font-weight:600; margin:.4rem 0 .25rem}
     input, select, textarea{
-      width:100%; padding:.8rem .85rem; border-radius:12px; border:1px solid #2a376b; background:#0c1230; color:var(--text); font:inherit
+      width:100%; padding:.7rem .8rem; border-radius:10px; border:1px solid rgba(255,255,255,.12);
+      background:#13142a; color:var(--text)
     }
-    input:focus, select:focus, textarea:focus{outline:none; box-shadow: var(--ring); border-color:#3a63a1}
-    textarea{min-height:120px; resize:vertical}
-    .contact-card{
-      background:linear-gradient(180deg,#10183a,#0d142f); border:1px solid #24305b; border-radius:14px; padding:1rem
+    input:focus, select:focus, textarea:focus, .button:focus{outline:none; box-shadow: var(--focus)}
+    .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width:600px){ .row{grid-template-columns:1fr} }
+    .help{font-size:.88rem; color:var(--muted)}
+    .ok{color:var(--accent)}
+    .warn{color:#ffcc66}
+    .footer{
+      margin-top:30px; padding:20px 0 40px; color:var(--muted); font-size:.95rem
     }
-    .contact-list{display:grid; gap:.5rem; margin:.6rem 0}
-    .contact-list a{display:flex; gap:.7rem; align-items:center; text-decoration:none; color:var(--text)}
-    .contact-list a span{color:var(--muted)}
-    /* Footer */
-    footer{padding:2rem 0; border-top:1px solid rgba(255,255,255,.06); color:var(--muted); font-size:.95rem}
-    .foot{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem}
-    .social{display:flex; gap:.6rem}
-    .social a{width:36px; height:36px; display:grid; place-items:center; border-radius:10px; background:#10204a; border:1px solid #223b73; color:#7dd3fc; text-decoration:none}
-    /* Utilities */
-    .pillset{display:flex; gap:.4rem; flex-wrap:wrap}
-    .pill{border:1px solid #2a3b6f; background:#0f1a3f; color:#9fb3da; border-radius:999px; padding:.35rem .6rem; font-size:var(--step--1)}
-    .sep{height:1px; background:linear-gradient(90deg, transparent, #2a3b6f, transparent); margin:1rem 0}
-    .center{text-align:center}
-    .accent{color:#7dd3fc}
-    .grid-2{display:grid; grid-template-columns: repeat(2, 1fr); gap:1rem}
-    .grid-4{display:grid; grid-template-columns: repeat(4, 1fr); gap:.8rem}
-    .kbd{background:#0f1b3f; border:1px solid #2a3b6f; padding:.15rem .35rem; border-radius:6px; font-size:.85em}
-    /* Responsive */
-    @media (max-width: 1000px){
-      .grid{grid-template-columns:1fr}
-      .hero-stats{grid-template-columns:repeat(3,1fr)}
-      .contact{grid-template-columns:1fr}
-      .grid-4{grid-template-columns: repeat(2, 1fr)}
-      .cards{grid-template-columns: repeat(2, 1fr)}
-      .tgrid{grid-template-columns: repeat(2, 1fr)}
-    }
-    @media (max-width: 720px){
-      .nav-links{position:fixed; inset: 64px 0 auto 0; background: color-mix(in oklab, var(--bg), #000 8%); border-bottom:1px solid rgba(255,255,255,.06); padding: .8rem 4%; display:none; flex-direction:column; align-items:flex-start; gap:.2rem}
-      .nav-links a{display:block; width:100%}
-      .nav-links.open{display:flex}
-      .hamburger{display:inline-grid; place-items:center}
-      .cards{grid-template-columns: 1fr}
-      .tgrid{grid-template-columns: 1fr}
-      .hero-stats{grid-template-columns:repeat(3,1fr)}
-    }
+    .small{font-size:.9rem}
+    .est-box{display:flex; flex-direction:column; gap:8px}
+    .est-total{font-size:1.5rem; font-weight:800}
+    .note{color:var(--muted); font-size:.9rem}
+    .pill{display:inline-block; padding:.2rem .5rem; border-radius:999px; background:#262747; color:#d7dbf1; font-size:.82rem}
+    .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Priyanka",
+    "jobTitle": "Cooking Instructor",
+    "description": "Private cooking lessons, group workshops, and live online classes.",
+    "knowsAbout": ["Indian regional cuisine", "vegetarian cooking", "vegan recipes", "meal prep", "baking"],
+    "areaServed": ["Online (Global)", "Local (In-person)"],
+    "image": "https://example.com/photo.jpg",
+    "url": "https://example.com/",
+    "telephone": "+91-00000-00000",
+    "email": "mailto:hello@example.com",
+    "offers": {
+      "@type": "OfferCatalog",
+      "name": "Cooking Classes",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Private 1:1 Taster (90 min)",
+          "priceCurrency": "INR",
+          "price": "1999",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "3-Class Pack",
+          "priceCurrency": "INR",
+          "price": "5400"
+        },
+        {
+          "@type": "Offer",
+          "name": "Group Workshop (3–8)",
+          "priceCurrency": "INR",
+          "price": "899",
+          "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "INR", "price": "899", "unitText": "per person" }
+        }
+      ]
+    },
+    "sameAs": ["https://instagram.com/yourhandle","https://www.youtube.com/@yourchannel"]
+  }
+  </script>
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to main content</a>
+  <header class="site" role="banner">
+    <div class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="#top">
+        <span class="logo" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+            <path d="M14 28h36v20a6 6 0 0 1-6 6H20a6 6 0 0 1-6-6V28z" fill="#ffffff33" stroke="white" stroke-width="2"/>
+            <path d="M10 24c-2-8 6-14 14-10 3-6 13-6 16 0 8-4 16 2 14 10" stroke="white" stroke-width="2"/>
+          </svg>
+        </span>
+        <span>Priyanka • Cooking Instructor</span>
+      </a>
 
-<header>
-  <div class="container nav" role="navigation" aria-label="Main">
-    <a href="#" class="brand">
-      <span class="logo" aria-hidden="true">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M4 16h16l-2.2-5.8A4 4 0 0 0 14 8H10a4 4 0 0 0-3.8 2.6L4 16z"></path>
-          <circle cx="8" cy="18" r="2" fill="white"></circle>
-          <circle cx="16" cy="18" r="2" fill="white"></circle>
-        </svg>
-      </span>
-      <div>
-        <h1>Priyanka</h1>
-        <small>Driving Instructor</small>
-      </div>
-    </a>
-    <button class="hamburger" id="navToggle" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">☰</button>
-    <nav class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#lessons">Lessons</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#faq">FAQs</a>
-      <a href="#contact" class="btn ghost">Contact</a>
-    </nav>
-  </div>
-</header>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="navlinks" id="navlinks">
+        <a href="#about">About</a>
+        <a href="#classes">Classes</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#areas">Areas</a>
+        <a href="#faq">FAQ</a>
+        <a href="#booking" class="pill">Book</a>
+      </nav>
+    </div>
+  </header>
 
-<main id="main">
-  <section id="home" class="hero">
-    <div class="container grid">
-      <div>
-        <span class="badge">Patient. Professional. Safety-first.</span>
-        <h2>Learn to drive with confidence</h2>
-        <p class="lead">Hi, I’m Priyanka — a professional driving instructor offering calm, structured lessons that help you master the road, pass your test, and become a safe, confident driver for life.</p>
-        <div class="cta-row">
-          <a href="#contact" class="btn">
-            <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            Book a lesson
-          </a>
-          <a href="#lessons" class="btn secondary">
-            <svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h12v2H3zm0 5h18v2H3z"/></svg>
-            View lesson types
-          </a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat"><b>250+</b><span>Happy learners</span></div>
-          <div class="stat"><b>5★</b><span>Student reviews</span></div>
-          <div class="stat"><b>95%</b><span>First‑time pass ready</span></div>
-        </div>
-      </div>
-      <div class="hero-card" aria-label="Quick highlights">
-        <div class="pillset">
-          <span class="pill">Manual & Automatic</span>
-          <span class="pill">Beginner friendly</span>
-          <span class="pill">Mock tests</span>
-          <span class="pill">Flexible schedule</span>
-          <span class="pill">Refresher lessons</span>
-        </div>
-        <div class="sep"></div>
-        <div class="grid-2">
-          <div class="card">
-            <div class="icon" aria-hidden="true">🚗</div>
-            <h4>Calm, clear coaching</h4>
-            <p class="muted">Step‑by‑step guidance with real‑time feedback and simple road strategies.</p>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap inner">
+        <div>
+          <span class="tag"><span class="dot" aria-hidden="true"></span> Enrolling for Jan–Mar</span>
+          <h1>Cook with confidence — private, group, and online classes with Priyanka</h1>
+          <p class="lead">Hands-on lessons tailored to your goals: Indian regional cuisine, vegetarian & vegan cooking, baking basics, and weekly meal prep. Clear steps, pro tips, and a focus on flavor and kitchen safety.</p>
+          <div class="cta">
+            <a class="button" href="#booking">Book a class</a>
+            <a class="button ghost" href="#classes">View classes</a>
           </div>
-          <div class="card">
-            <div class="icon" aria-hidden="true">🛡️</div>
-            <h4>Safety first</h4>
-            <p class="muted">Defensive driving techniques and hazard perception built into every lesson.</p>
+          <div class="badges">
+            <span class="badge">10+ years teaching</span>
+            <span class="badge">Food hygiene trained</span>
+            <span class="badge">Online worldwide</span>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="lessons">
-    <div class="container">
-      <div class="section-head">
-        <h3>Lesson types</h3>
-        <p class="muted">Tailored plans for every level — from first drive to test day.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <div class="icon" aria-hidden="true">🌱</div>
-          <h4>New learners</h4>
-          <ul class="list">
-            <li>Controls, clutch, and smooth starts</li>
-            <li>Steering, mirrors, and road position</li>
-            <li>Basic junctions and roundabouts</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true">⚙️</div>
-          <h4>Refresher lessons</h4>
-          <ul class="list">
-            <li>Confidence after a gap</li>
-            <li>Night and bad‑weather skills</li>
-            <li>City and highway practice</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true">🏁</div>
-          <h4>Test preparation</h4>
-          <ul class="list">
-            <li>Mock driving tests</li>
-            <li>Maneuvers and parking</li>
-            <li>Exam routes and tips</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="pricing">
-    <div class="container">
-      <div class="section-head">
-        <h3>Pricing & packages</h3>
-        <p class="muted">Simple, flexible options. Save more with bundles.</p>
-      </div>
-      <div class="cards">
-        <article class="card price-card">
-          <span class="badge">Flexible</span>
-          <h4>Single lesson</h4>
-          <div class="price">from 45/hr</div>
-          <div class="price-feat">
-            <span><span class="tick">✔</span> 60 or 90 minute sessions</span>
-            <span><span class="tick">✔</span> Manual or automatic</span>
-            <span><span class="tick">✔</span> Pay as you go</span>
-          </div>
-          <a href="#contact" class="btn">Book now</a>
-        </article>
-
-        <article class="card price-card reco">
-          <span class="badge">Most popular</span>
-          <h4>5‑lesson pack</h4>
-          <div class="price">from 210</div>
-          <div class="save">Save up to 7%</div>
-          <div class="price-feat">
-            <span><span class="tick">✔</span> Structured progression</span>
-            <span><span class="tick">✔</span> Priority scheduling</span>
-            <span><span class="tick">✔</span> Mock test tips</span>
-          </div>
-          <a href="#contact" class="btn">Reserve pack</a>
-        </article>
-
-        <article class="card price-card">
-          <span class="badge">Best value</span>
-          <h4>10‑lesson pack</h4>
-          <div class="price">from 400</div>
-          <div class="save">Save up to 11%</div>
-          <div class="price-feat">
-            <span><span class="tick">✔</span> Comprehensive coverage</span>
-            <span><span class="tick">✔</span> Test‑day readiness</span>
-            <span><span class="tick">✔</span> Free progress tracker</span>
-          </div>
-          <a href="#contact" class="btn">Start today</a>
-        </article>
-      </div>
-      <p class="muted" style="margin-top:.7rem">Note: Actual rates vary by location, time, and transmission. Get a personalized quote below.</p>
-    </div>
-  </section>
-
-  <section id="reviews">
-    <div class="container">
-      <div class="section-head">
-        <h3>What learners say</h3>
-        <p class="muted">Real feedback from happy drivers.</p>
-      </div>
-      <div class="tgrid">
-        <blockquote class="testimonial">
-          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p>Priyanka is incredibly patient and explains everything so clearly. I went from nervous to confident in just a few weeks.</p>
-          <cite class="muted">— Aisha K.</cite>
-        </blockquote>
-        <blockquote class="testimonial">
-          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p>The mock tests were spot on. I knew exactly what to expect on exam day and passed first time!</p>
-          <cite class="muted">— Daniel R.</cite>
-        </blockquote>
-        <blockquote class="testimonial">
-          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p>Great tips on parking and roundabouts. The structured lessons made progress easy to track.</p>
-          <cite class="muted">— Meera S.</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <section id="areas">
-    <div class="container">
-      <div class="section-head">
-        <h3>Areas covered</h3>
-        <p class="muted">Serving your city and nearby suburbs.</p>
-      </div>
-      <div class="grid-4">
-        <div class="card center">
-          <div class="icon" aria-hidden="true">📍</div>
-          <h4>City Center</h4>
-          <p class="muted">Business district and exam routes</p>
-        </div>
-        <div class="card center">
-          <div class="icon" aria-hidden="true">📍</div>
-          <h4>Northside</h4>
-          <p class="muted">Residential practice</p>
-        </div>
-        <div class="card center">
-          <div class="icon" aria-hidden="true">📍</div>
-          <h4>West End</h4>
-          <p class="muted">Highway access</p>
-        </div>
-        <div class="card center">
-          <div class="icon" aria-hidden="true">📍</div>
-          <h4>East Park</h4>
-          <p class="muted">Roundabouts and parking</p>
+        <div class="panel illus" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#7b3fe4"/>
+                <stop offset="1" stop-color="#2ed3a8"/>
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#g1)" stroke-width="8" opacity=".95">
+              <rect x="120" y="120" width="400" height="260" rx="24" ry="24"/>
+              <path d="M150 200h340"/>
+              <circle cx="210" cy="170" r="10"/>
+              <circle cx="260" cy="170" r="10"/>
+              <circle cx="310" cy="170" r="10"/>
+              <path d="M170 230h140M170 270h120M170 310h180"/>
+              <path d="M400 330c0-40 50-40 50 0 0 20-50 20-50 0z" />
+              <path d="M370 250c0-60 90-60 90 0 0 30-90 30-90 0z" />
+            </g>
+          </svg>
         </div>
       </div>
-      <p class="muted" style="margin-top:.7rem">Not sure if I cover your area? Ask below — I’m happy to help.</p>
-    </div>
-  </section>
+    </section>
 
-  <section id="faq">
-    <div class="container">
-      <div class="section-head">
-        <h3>Frequently asked questions</h3>
-        <p class="muted">Answers to common queries about lessons and scheduling.</p>
-      </div>
-      <div class="grid-2">
-        <details class="faq">
-          <summary>What do I need to bring to my first lesson?</summary>
-          <p>Your valid learner’s permit, glasses or contacts if you need them, and comfortable shoes. I’ll handle the rest.</p>
-        </details>
-        <details class="faq">
-          <summary>Do you teach manual and automatic?</summary>
-          <p>Yes — I offer both transmissions. Let me know your preference when booking.</p>
-        </details>
-        <details class="faq">
-          <summary>How long is each session?</summary>
-          <p>Most lessons are 60 minutes, with 90‑minute sessions available for faster progress.</p>
-        </details>
-        <details class="faq">
-          <summary>What is your cancellation policy?</summary>
-          <p>Please give at least 24 hours notice to avoid a fee. Emergencies are of course considered.</p>
-        </details>
-        <details class="faq">
-          <summary>Do you offer mock tests?</summary>
-          <p>Absolutely. I simulate real exam conditions and routes to build confidence for test day.</p>
-        </details>
-        <details class="faq">
-          <summary>Which languages do you teach in?</summary>
-          <p>Primarily English and Hindi. If you prefer another language, I’ll try to accommodate.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="section-head">
-        <h3>Book a lesson</h3>
-        <p class="muted">Tell me a little about your goals and availability. I’ll get back to you within 24 hours.</p>
-      </div>
-      <div class="contact">
-        <form id="bookingForm" novalidate>
-          <div class="grid-2">
-            <div>
-              <label for="name">Full name</label>
-              <input id="name" name="name" autocomplete="name" required placeholder="Your name" />
-            </div>
-            <div>
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+91 90000 00000" required />
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>About Priyanka</h2>
+          <span class="chip"><span class="dot"></span> Student-first teaching</span>
+        </div>
+        <div class="grid">
+          <div class="col-8">
+            <div class="card">
+              <p>Hi, I’m Priyanka — a professional cooking instructor passionate about making delicious, nourishing food accessible to everyone. I specialize in Indian regional cuisine, vegetarian and vegan cooking, baking fundamentals, and smart weekly meal prep. My lessons are practical, step-by-step, and adapted to your kitchen, tools, and time.</p>
+              <div class="kpi" aria-label="Highlights">
+                <div class="item">• Customized lesson plans</div>
+                <div class="item">• Clear recipes and shopping lists</div>
+                <div class="item">• Online or at your home</div>
+                <div class="item">• Allergy- and diet-friendly</div>
+              </div>
             </div>
           </div>
-          <div class="grid-2">
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
-            </div>
-            <div>
-              <label for="transmission">Transmission</label>
-              <select id="transmission" name="transmission" required>
-                <option value="">Choose</option>
-                <option>Manual</option>
-                <option>Automatic</option>
-                <option>Either</option>
-              </select>
+          <div class="col-4">
+            <div class="card">
+              <h3>What you’ll learn</h3>
+              <ul class="clean">
+                <li>Knife skills & kitchen safety</li>
+                <li>Seasoning & balancing flavor</li>
+                <li>Time-saving prep & batching</li>
+                <li>Breads, curries, dals, stir-fries</li>
+                <li>Eggless & wholegrain baking</li>
+              </ul>
+              <p class="help">All classes include printable notes and post-class support for 7 days.</p>
             </div>
           </div>
-          <div class="grid-2">
-            <div>
-              <label for="level">Your level</label>
-              <select id="level" name="level">
-                <option>Beginner</option>
-                <option>Intermediate</option>
-                <option>Test-ready</option>
-                <option>Refresher</option>
-              </select>
-            </div>
-            <div>
-              <label for="time">Preferred time</label>
-              <select id="time" name="time">
-                <option>Weekdays - Morning</option>
-                <option>Weekdays - Afternoon</option>
-                <option>Weekdays - Evening</option>
-                <option>Weekends</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label for="message">How can I help?</label>
-            <textarea id="message" name="message" placeholder="Share your goals, location, and any questions."></textarea>
-          </div>
-          <div class="pillset" aria-hidden="true">
-            <span class="pill">Safe</span>
-            <span class="pill">Patient</span>
-            <span class="pill">Supportive</span>
-          </div>
-          <div style="display:flex; gap:.6rem; align-items:center; flex-wrap:wrap">
-            <button type="submit" class="btn">Request booking</button>
-            <span class="muted">or call <a href="tel:+910000000000" class="accent" aria-label="Call Priyanka">+91 00000 00000</a></span>
-          </div>
-          <small class="muted">By submitting, you agree to be contacted about your lesson request.</small>
-        </form>
-
-        <aside class="contact-card">
-          <h4>Contact details</h4>
-          <div class="contact-list">
-            <a href="tel:+910000000000" aria-label="Call phone number">
-              <span>📞</span> <div><b>Phone</b><br><span>+91 00000 00000</span></div>
-            </a>
-            <a href="mailto:lessons@priyankadrives.com" aria-label="Send email">
-              <span>✉️</span> <div><b>Email</b><br><span>lessons@priyankadrives.com</span></div>
-            </a>
-            <a href="#" aria-label="Location">
-              <span>📍</span> <div><b>Location</b><br><span>Your City & nearby areas</span></div>
-            </a>
-          </div>
-          <div class="sep"></div>
-          <p class="muted">Hours: Mon–Fri 8:00–19:00, Sat 9:00–16:00</p>
-          <div class="sep"></div>
-          <p><span class="badge">New to driving?</span> I’ll start with a calm introduction and build from there.</p>
-        </aside>
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer>
-  <div class="container foot">
-    <div>&copy; <span id="year"></span> Priyanka — Driving Instructor. All rights reserved.</div>
-    <div class="social" aria-label="Social links">
-      <a href="#" aria-label="Instagram">⌁</a>
-      <a href="#" aria-label="Facebook">f</a>
-      <a href="#" aria-label="LinkedIn">in</a>
-      <a href="#" aria-label="WhatsApp">✆</a>
-    </div>
-  </div>
-  <div class="container" style="margin-top:.7rem">
-    <small class="muted">This site is provided for portfolio and informational purposes.</small>
-  </div>
-</footer>
+    <section id="classes">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Class formats</h2>
+          <span class="muted">Choose the format that fits your goals and schedule</span>
+        </div>
+        <div class="grid">
+          <div class="col-4">
+            <div class="card">
+              <h3>Private 1:1</h3>
+              <p class="muted">Focused coaching tailored to your pace and tastes.</p>
+              <ul class="clean">
+                <li>90–120 minutes</li>
+                <li>1–3 dishes per session</li>
+                <li>Personalized feedback</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <h3>Group Workshop</h3>
+              <p class="muted">Learn together with friends or family at home.</p>
+              <ul class="clean">
+                <li>2–3 hours</li>
+                <li>3–8 participants</li>
+                <li>Great for celebrations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <h3>Live Online</h3>
+              <p class="muted">Cook along on video with real-time guidance.</p>
+              <ul class="clean">
+                <li>Anywhere in the world</li>
+                <li>Shopping list provided</li>
+                <li>Recording on request</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-<script>
-  // Mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  navToggle?.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-  // Close nav when a link is clicked (mobile)
-  navLinks?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    if (window.innerWidth < 721) {
-      navLinks.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    }
-  }));
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click', e=>{
-      const id = a.getAttribute('href');
-      if(id.length>1){
-        const el = document.querySelector(id);
-        if(el){
-          e.preventDefault();
-          el.scrollIntoView({behavior:'smooth', block:'start'});
-          history.replaceState(null, '', id);
+        <div class="section-head" style="margin-top:16px">
+          <h2>Popular classes</h2>
+          <span class="muted">Beginner to advanced — pick a theme or create your own</span>
+        </div>
+        <div class="grid">
+          <div class="col-4">
+            <div class="card">
+              <div class="pill">Beginner • 90 min</div>
+              <h3>Everyday Indian Basics</h3>
+              <p class="muted">Masoor dal tadka, jeera rice, simple sabzi, raita — weeknight staples made easy.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="pill">Intermediate • 2 hr</div>
+              <h3>North Indian Feast</h3>
+              <p class="muted">Paneer makhani, garlic naan on tawa, kachumber salad, sweet lassi.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="pill">Beginner • 90 min</div>
+              <h3>Knife Skills & Stir-Fries</h3>
+              <p class="muted">Knife safety, cuts, and a seasonal veggie stir-fry with perfect texture.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="pill">Baking • 2 hr</div>
+              <h3>Eggless Baking</h3>
+              <p class="muted">Moist tea cakes and cookies with reliable substitutes and techniques.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="pill">Meal Prep • 2 hr</div>
+              <h3>Smart Weekly Prep</h3>
+              <p class="muted">Batch-cook grains, protein, sauces, and assemble quick meals all week.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="pill">Advanced • 2.5 hr</div>
+              <h3>Regional Special: South India</h3>
+              <p class="muted">Sambar, coconut chutney, masala dosa with crisp batter tips.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Pricing</h2>
+          <span class="muted">Transparent rates with bundle savings</span>
+        </div>
+        <div class="grid">
+          <div class="col-4">
+            <div class="card">
+              <h3>Private Taster</h3>
+              <p class="muted">90 minutes, 1–2 dishes</p>
+              <p class="price">₹1,999</p>
+              <p class="help">In-person or online</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <h3>3-Class Pack</h3>
+              <p class="muted">Save 10% vs single</p>
+              <p class="price">₹5,400</p>
+              <p class="help">Valid 3 months</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <h3>5-Class Mastery</h3>
+              <p class="muted">Save 15% vs single</p>
+              <p class="price">₹8,500</p>
+              <p class="help">Valid 6 months</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <h3>Group Workshop</h3>
+              <p class="muted">3–8 people, 2–3 hours</p>
+              <p class="price">from ₹899 per person</p>
+              <p class="help">Ingredients can be provided at additional cost</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <h3>Corporate & Events</h3>
+              <p class="muted">Team-building, celebrations, retreats</p>
+              <p class="price">Request a quote</p>
+              <p class="help">Custom menu and logistics support</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                <div>
+                  <h3>Quick estimate</h3>
+                  <p class="help">Configure a session to see an instant estimate (non-binding).</p>
+                  <div class="est-box">
+                    <label for="est-format">Format</label>
+                    <select id="est-format">
+                      <option value="private">Private 1:1</option>
+                      <option value="group">Group (3–8)</option>
+                      <option value="online">Online (live)</option>
+                    </select>
+                    <div class="row">
+                      <div>
+                        <label for="est-part">Participants</label>
+                        <input id="est-part" type="number" min="1" max="12" value="1" />
+                      </div>
+                      <div>
+                        <label for="est-distance">Travel distance (km)</label>
+                        <input id="est-distance" type="number" min="0" max="40" value="0" />
+                        <div class="help">Only for in-person. First 8 km included; then ₹20/km.</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div>
+                        <label><input type="checkbox" id="est-ingredients" /> Provide ingredients</label>
+                        <div class="help">Adds ₹250 per person</div>
+                      </div>
+                      <div>
+                        <label><input type="checkbox" id="est-multi" /> 2-hour extended session</label>
+                        <div class="help">Adds 40% time cost</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3>Estimated total</h3>
+                  <p class="est-total" id="est-total">₹1,999</p>
+                  <p class="note" id="est-note">Private 1:1, 1 participant</p>
+                  <div class="help">Taxes included. Venue/parking fees not included. Final quote confirmed upon booking.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="note">Travel within ~8 km is included. Additional distance charged at ₹20/km. For large groups, events, or specialty ingredients, please request a custom quote.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What students say</h2>
+          <span class="muted">Real feedback from recent classes</span>
+        </div>
+        <div class="grid">
+          <div class="col-4">
+            <div class="card">
+              <p>“I finally understand how to balance spice and acid. The dal and sabzi we made are now weekly staples!”</p>
+              <p class="small muted">— Aditi, Beginner</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <p>“Our team loved the online cooking event. Clear instructions, fun pacing, and delicious results.”</p>
+              <p class="small muted">— Rohit, Corporate workshop</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <p>“The eggless cake turned out perfect on the first try. Priyanka’s tips were gold.”</p>
+              <p class="small muted">— Meera, Baking class</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Where I teach</h2>
+          <span class="muted">In-person locally • Online worldwide</span>
+        </div>
+        <div class="grid">
+          <div class="col-6">
+            <div class="card">
+              <h3>In-person (Local)</h3>
+              <p class="muted">I travel for home lessons within approx. 15 km of the city center.</p>
+              <ul class="clean">
+                <li>City Center and nearby neighborhoods</li>
+                <li>Suburbs within a 15 km radius</li>
+                <li>Travel fee beyond 8 km</li>
+              </ul>
+              <p class="help">Update the neighborhood list to your actual area in the content.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <h3>Online (Global)</h3>
+              <p class="muted">Live video classes via Meet/Zoom with multi-camera setup and clear angles.</p>
+              <ul class="clean">
+                <li>Shopping list 48 hrs before class</li>
+                <li>Recording available on request</li>
+                <li>Follow-up support for 7 days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Frequently asked questions</h2>
+          <span class="muted">If you have other questions, just ask</span>
+        </div>
+        <div class="grid faq">
+          <div class="col-6">
+            <details>
+              <summary>What should I have ready for class?</summary>
+              <p>Basic cookware, a chopping board, knives, stove, and pantry staples. I’ll send a detailed list and prep notes 48 hours prior.</p>
+            </details>
+          </div>
+          <div class="col-6">
+            <details>
+              <summary>Do you cater to dietary needs?</summary>
+              <p>Yes — vegetarian, vegan, gluten-free, nut-free, and other allergies can be accommodated. Please share details in your booking.</p>
+            </details>
+          </div>
+          <div class="col-6">
+            <details>
+              <summary>Can you provide ingredients?</summary>
+              <p>Yes. I can source ingredients and bring them along. This adds a per-person cost depending on the menu.</p>
+            </details>
+          </div>
+          <div class="col-6">
+            <details>
+              <summary>What is the rescheduling policy?</summary>
+              <p>Free reschedule up to 24 hours before. Within 24 hours, a 50% reschedule fee may apply to cover prep and purchases.</p>
+            </details>
+          </div>
+          <div class="col-6">
+            <details>
+              <summary>How do online classes work?</summary>
+              <p>You’ll receive a secure link and a shopping list. We cook together step-by-step. A recording can be shared on request.</p>
+            </details>
+          </div>
+          <div class="col-6">
+            <details>
+              <summary>Do you offer gift vouchers?</summary>
+              <p>Absolutely. Digital gift cards are available for any amount or specific class packs.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Book your class</h2>
+          <span class="muted">Tell me about your goals and schedule — I’ll reply within 24 hours</span>
+        </div>
+        <div class="grid">
+          <div class="col-8">
+            <form id="bookForm" class="card" novalidate>
+              <div class="row">
+                <div>
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" autocomplete="name" required />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+              </div>
+              <div class="row">
+                <div>
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" />
+                </div>
+                <div>
+                  <label for="format">Format</label>
+                  <select id="format" name="format" required>
+                    <option value="" disabled selected>Select format</option>
+                    <option>Private 1:1</option>
+                    <option>Group workshop</option>
+                    <option>Online (live)</option>
+                    <option>Corporate/event</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div>
+                  <label for="level">Skill level</label>
+                  <select id="level" name="level">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="people">Participants</label>
+                  <input id="people" name="people" type="number" min="1" value="1" />
+                </div>
+              </div>
+              <div class="row">
+                <div>
+                  <label for="date">Preferred date</label>
+                  <input id="date" name="date" type="date" />
+                </div>
+                <div>
+                  <label for="time">Preferred time</label>
+                  <input id="time" name="time" type="time" />
+                </div>
+              </div>
+              <div class="row">
+                <div>
+                  <label for="location">City / Area (for in-person)</label>
+                  <input id="location" name="location" placeholder="e.g., Indiranagar, Bengaluru" />
+                </div>
+                <div>
+                  <label for="menu">Menu or goal</label>
+                  <input id="menu" name="menu" placeholder="e.g., North Indian feast, meal prep basics" />
+                </div>
+              </div>
+              <div class="row">
+                <div>
+                  <label for="diet">Dietary needs</label>
+                  <input id="diet" name="diet" placeholder="Vegetarian, vegan, gluten-free, nut-free, etc." />
+                </div>
+                <div>
+                  <label for="allergy">Allergies</label>
+                  <input id="allergy" name="allergy" placeholder="List any allergies" />
+                </div>
+              </div>
+              <label for="message">Anything else?</label>
+              <textarea id="message" name="message" rows="4" placeholder="Share your experience, kitchen setup, or specific dishes you’d like to master."></textarea>
+              <p class="help"><label><input type="checkbox" id="agree" required /> I agree to be contacted about my booking. Your details are kept private and never shared.</label></p>
+              <div class="row">
+                <button class="button" type="submit">Send booking request</button>
+                <button class="button ghost" type="reset">Reset</button>
+              </div>
+              <p id="formStatus" role="status" class="help"></p>
+            </form>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <h3>Contact</h3>
+              <p>Email: <a href="mailto:hello@example.com">hello@example.com</a><br/>Phone: <a href="tel:+910000000000">+91 00000 00000</a></p>
+              <p class="muted">Hours: Mon–Sat, 10:00–19:00</p>
+              <h3>Gift vouchers</h3>
+              <p class="muted">Give the joy of cooking. Digital gift cards available.</p>
+              <a class="button ghost" href="#pricing">See pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap footer" role="contentinfo">
+      <hr style="border:0;height:1px;background:rgba(255,255,255,.08)" />
+      <p>&copy; <span id="year"></span> Priyanka — Cooking Instructor. All rights reserved.</p>
+      <p class="small">This site uses no cookies or trackers. Built with semantic HTML for accessibility and performance.</p>
+    </div>
+  </main>
+
+  <script>
+    // Mobile nav toggle
+    (function(){
+      const btn = document.getElementById('menuBtn');
+      const nav = document.getElementById('navlinks');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', ()=>{
+        const show = !nav.classList.contains('show');
+        nav.classList.toggle('show', show);
+        btn.setAttribute('aria-expanded', String(show));
+      });
+      // Close on link click (mobile)
+      nav.addEventListener('click', e=>{
+        if(e.target.tagName === 'A'){ nav.classList.remove('show'); btn.setAttribute('aria-expanded','false'); }
+      });
+    })();
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Estimator
+    (function(){
+      const fmt = document.getElementById('est-format');
+      const ppl = document.getElementById('est-part');
+      const dist = document.getElementById('est-distance');
+      const ingr = document.getElementById('est-ingredients');
+      const multi = document.getElementById('est-multi');
+      const totalEl = document.getElementById('est-total');
+      const noteEl = document.getElementById('est-note');
+
+      const calc = ()=>{
+        const f = fmt.value;
+        const n = Math.max(1, parseInt(ppl.value||1,10));
+        const d = Math.max(0, parseFloat(dist.value||0));
+        const wantsIngr = ingr.checked;
+        const isLong = multi.checked;
+
+        let base = 0, label = '';
+        if (f === 'private'){
+          base = 1999;
+          label = 'Private 1:1';
+        } else if (f === 'group'){
+          base = n * 899;
+          label = 'Group';
+        } else {
+          base = 1699; // online
+          label = 'Online';
         }
-      }
-    })
-  });
-  // Year
-  document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Form handling (demo)
-  const form = document.getElementById('bookingForm');
-  form?.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    const data = Object.fromEntries(new FormData(form).entries());
-    // Basic validation
-    if(!data.name || !data.phone || !data.email){
-      alert('Please fill in your name, phone, and email.');
-      return;
-    }
-    alert('Thanks, ' + data.name + '! Your request has been sent. I will contact you shortly.');
-    form.reset();
-  });
-</script>
+        // Ingredients provisioning cost
+        let extraIngr = wantsIngr ? n * 250 : 0;
 
-<!-- Structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Priyanka - Driving Instructor",
-  "description": "Professional driving lessons: beginner to test-ready, manual and automatic, flexible scheduling.",
-  "areaServed": "Your City and nearby areas",
-  "url": "https://example.com",
-  "telephone": "+91 00000 00000",
-  "email": "lessons@priyankadrives.com",
-  "openingHours": "Mo-Fr 08:00-19:00 Sa 09:00-16:00",
-  "sameAs": ["https://instagram.com/","https://facebook.com/","https://linkedin.com/"]
-}
-</script>
+        // Travel fee beyond 8 km for in-person
+        let travel = 0;
+        if (f !== 'online'){
+          const extraKm = Math.max(0, d - 8);
+          travel = extraKm * 20;
+        }
+
+        // Longer session multiplier
+        if (isLong) base = Math.round(base * 1.4);
+
+        let total = base + extraIngr + travel;
+        totalEl.textContent = '₹' + total.toLocaleString('en-IN');
+        noteEl.textContent = `${label}, ${n} participant${n>1?'s':''}${wantsIngr?', ingredients included':''}${(f!=='online'&&d>0)?`, ~${d} km travel`:''}${isLong?', 2-hr extended':''}`;
+      };
+
+      [fmt, ppl, dist, ingr, multi].forEach(el=> el.addEventListener('input', calc));
+      calc();
+    })();
+
+    // Booking form: simple client-side demo
+    (function(){
+      const form = document.getElementById('bookForm');
+      const status = document.getElementById('formStatus');
+      if(!form) return;
+
+      // Restore saved values
+      const fields = Array.from(form.elements).filter(el => el.name);
+      const KEY = 'cookForm.v1';
+      try {
+        const saved = JSON.parse(localStorage.getItem(KEY) || '{}');
+        fields.forEach(el=>{
+          if(saved[el.name] != null){
+            if(el.type === 'checkbox'){
+              el.checked = !!saved[el.name];
+            } else {
+              el.value = saved[el.name];
+            }
+          }
+        });
+      } catch(e){}
+
+      // Save on change
+      form.addEventListener('input', ()=>{
+        const data = {};
+        fields.forEach(el=>{
+          data[el.name] = (el.type === 'checkbox') ? el.checked : el.value;
+        });
+        try { localStorage.setItem(KEY, JSON.stringify(data)); } catch(e){}
+      });
+
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        status.textContent = '';
+        // Basic validation
+        const required = ['name','email','format'];
+        for(const name of required){
+          const el = form.elements[name];
+          if(!el || !el.value){
+            el.focus();
+            status.textContent = 'Please fill the required fields.';
+            status.style.color = 'var(--warn)';
+            return;
+          }
+        }
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+
+        // Simulate a request
+        setTimeout(()=>{
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send booking request';
+          status.textContent = 'Thank you! Your request has been received. I’ll be in touch within 24 hours.';
+          status.style.color = 'var(--ok)';
+          alert('Booking request sent! This demo does not send real emails. Connect to your backend to make it live.');
+          // Optionally clear:
+          // form.reset();
+        }, 700);
+      });
+
+      form.addEventListener('reset', ()=>{
+        status.textContent = '';
+        try { localStorage.removeItem(KEY); } catch(e){}
+      });
+    })();
+  </script>
 </body>
 </html>
